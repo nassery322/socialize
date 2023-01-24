@@ -1,0 +1,30 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .nav-modal {
+    animation-name:modalanime;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    position: fixed;
+    top: 0vh;
+    left:0%;
+   width: 30%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    height:100%;
+    overflow-y: auto;
+  }
+
+ @media (max-width:480px){
+    .nav-modal{
+        width: 40%;
+    }
+ }

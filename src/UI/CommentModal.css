@@ -1,0 +1,51 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .commentmodal {
+
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    min-height: 40vh;
+    height:auto;
+    max-height: 60vh;
+    overflow-y: auto;
+    border: none;
+  }
+ 
+  @media (max-width:750px){
+    .commentmodal{
+  width: 65%;
+left:17% ;
+}
+  }
+  @media (max-width:600px){
+    .commentmodal{
+  width: 75%;
+left:12.5% ;
+}
+  }
+
+  @media (max-width:450px){
+    .commentmodal{
+  width: 100%;
+left:0% ;
+}
+  }
+
+
+
+

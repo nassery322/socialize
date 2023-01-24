@@ -1,0 +1,38 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal {
+    animation-name:modalanime;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    position: fixed;
+    top: 20vh;
+    left:20%;
+    min-width: 10%;
+    max-width: 50%;
+    background-color: white;
+    padding: 1rem;
+    padding-right: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    height:100%;
+    overflow-y: auto;
+  }
+  @keyframes modalanime{
+    from{
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0%);
+    }
+  }
+
+

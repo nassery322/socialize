@@ -1,0 +1,45 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .loginmodal {
+    position: fixed;
+    top: 20vh;
+    left: 34%;
+    min-width: 30%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    height:auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  @media (max-width:1000px){
+    .loginmodal{
+      left:28%; width: 45%;
+    }
+  }
+  @media (max-width:860px){
+    .loginmodal{
+      left:20%; width: 55%;
+    }
+  }
+  @media (max-width:700px){
+    .loginmodal{
+      left:12%; width: 75%;
+    }
+  }
+  @media (max-width:500px){
+    .loginmodal{
+      width: 100%; left: 0;
+    }
+  }
+

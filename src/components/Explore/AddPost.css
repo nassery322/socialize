@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+.add-post{
+    outline: none; padding: 16px;
+}
+.add-post-content{ font-family: 'Andika', sans-serif;
+
+    height:8rem; display: block; width: 100%; resize: none; overflow-y: auto; font-size: 1.2rem;
+  
+}
+.post-btn{
+    margin-top:2rem; font-size: 1rem;  margin-left:-3px;
+    
+}
+.closebtn{
+   margin-right:-2px;
+}
+
+@media (max-width:500px){
+    .add-post-content{
+        height: 20rem !important;
+    }
+}

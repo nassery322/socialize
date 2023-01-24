@@ -1,0 +1,76 @@
+.post-item{
+border-bottom:solid 1px black; margin-bottom: 3%; box-sizing: border-box !important;
+}
+.user-name{
+    font-size: 1.3rem; border-bottom: 3px solid rgb(223, 37, 37); margin-bottom: 3%; padding: 12px; color:rgb(237, 101, 101); display: flex; align-items: center;
+    
+}
+.post-content{
+    height: auto;  overflow-y: auto; border-bottom:solid 1px; margin-bottom: 0%; padding: 12px; padding-bottom: 24px; box-sizing: border-box;
+}
+.post-controls{
+    display: flex; border:none; font-size: 1.6rem; width:25%; justify-content: space-between; margin-left:4%;   box-sizing: border-box; height: 2.5rem;
+}
+.heart, .comment{box-sizing: border-box;
+    border:1px none; height: 100%;  width:30%; font-size: 1rem; display: flex; align-items: center; justify-content: space-around; margin:0 2%; 
+}
+
+.fa-heart, .fa-comment{
+    font-size: 1.5rem; cursor: pointer;   
+}
+.fa-heart{
+    padding-right: 5px;
+}
+.comments{
+    padding: 12px;
+}
+.comments textarea{
+    width: 95%; margin-right: auto; margin-left: auto; height: 5rem; font-size: 1.3rem;
+}
+.commentbtn{
+    height: 2.5rem; float: right; display: flex; justify-content: center; align-items: center;
+}
+.prev-comments{
+    margin-top:10%;
+}
+.prev-comments p{
+    color:red; font-size: 1.2rem;
+}
+
+@media (max-width:850px){
+    .post-controls div{
+        width: 40%;
+    }
+}
+@media (max-width:750px){
+    .post-controls div{
+        width:25%
+    }
+}
+@media (max-width:675px){
+    .post-controls div{
+        width:30%
+    }
+}
+
+@media (max-width:565px){
+    .post-controls div{
+        width:35%
+    }
+}
+@media (max-width:465px){
+    .post-controls div{
+        width:45%
+    }
+    .heart{
+        margin-right:20px !important; }
+    
+}
+@media (max-width:400px){
+    .post-controls{
+        width: 33%;
+    }
+    .post-controls div{
+        width:50% !important; justify-content: space-between;
+    }
+}

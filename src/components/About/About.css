@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.about{ word-spacing: 3px;
+box-sizing: border-box !important;     font-family: 'Rajdhani', sans-serif; background-image: url(../../assets/Team\ spirit-bro.svg); background-color:rgb(60, 98, 193); background-repeat: no-repeat; background-position-x:95% ; background-position-y:1rem; background-size: 30%;
+
+}
+.about-header{
+    width:100%; background-color: rgb(67, 67, 208); height: 4rem; color:white; display: flex; justify-content: flex-start; align-items: center; text-indent:14px; font-size: 2rem;     font-family: 'Rajdhani', sans-serif;
+
+}
+.about-content p{
+display: block;
+}
+.about-content{ margin-left: 8px;
+    width: 60%; font-size: 1.3rem;  color:white; font-weight: 600; padding-bottom: 4rem;
+}
+.about-content:nth-child(1){
+    text-indent: 10px;
+}
+  
+@media (max-width:1250px){
+    .about{
+        background-position-y: 3rem; background-size: 35%;
+    }
+}
+@media (max-width:1020px){
+    .about{
+        background-position-y: 4rem; background-size: 36%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .about {
+      font-size: 1.1rem;
+      width: 100% !important;
+    }
+  }
+  
+
+  
+  @media only screen and (max-width: 768px) {
+    .about-header {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .about-header {
+      font-size: 1.3rem;
+    }
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .about{
+        background-image: none;
+    }
+    .about-content{
+        width: 80%; margin-right: auto ; margin-left: auto; text-align: center; 
+    }
+    .about p {
+      width: 80%; margin-right:auto; margin-left: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .about p {
+      width: 100%; font-size: 1.2rem;
+    }
+  }

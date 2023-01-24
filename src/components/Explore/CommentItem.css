@@ -1,0 +1,12 @@
+.comment-item{
+    border-bottom:solid 2px; margin-bottom: 18px;
+}
+.name-avatar{
+    font-size: 1.2rem; border-bottom: 2px solid; color:red; height: 3rem; width:100%; display: flex; justify-content: flex-start; align-items: center;
+}
+.avatar{
+    margin-right: 7px;
+}
+.user-comment{
+    font-size:1.1rem; margin-top: 14px; margin-bottom: 3%; 
+}
