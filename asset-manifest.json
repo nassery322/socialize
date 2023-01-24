@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/nassery322/socialize/static/css/main.31aafdd7.css",
+    "main.js": "/nassery322/socialize/static/js/main.6e2b3c7e.js",
+    "static/js/787.b223174f.chunk.js": "/nassery322/socialize/static/js/787.b223174f.chunk.js",
+    "static/media/logo.png": "/nassery322/socialize/static/media/logo.f518c05552802e0644af.png",
+    "static/media/Connected world-bro (1).svg": "/nassery322/socialize/static/media/Connected world-bro (1).7b504dfd280958634975.svg",
+    "static/media/Team spirit-bro.svg": "/nassery322/socialize/static/media/Team spirit-bro.6571777ada4da8fa4159.svg",
+    "static/media/logo.svg": "/nassery322/socialize/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/nassery322/socialize/index.html",
+    "main.31aafdd7.css.map": "/nassery322/socialize/static/css/main.31aafdd7.css.map",
+    "main.6e2b3c7e.js.map": "/nassery322/socialize/static/js/main.6e2b3c7e.js.map",
+    "787.b223174f.chunk.js.map": "/nassery322/socialize/static/js/787.b223174f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31aafdd7.css",
+    "static/js/main.6e2b3c7e.js"
+  ]
+}
