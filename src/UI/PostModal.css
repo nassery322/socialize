@@ -23,8 +23,8 @@
   }
   
   @media (max-width:500px){
-    .postmodal{
-      width:90%;
+    .postmodal{top:10vh;
+      width:100%;
       left:1%;
     }
   }
