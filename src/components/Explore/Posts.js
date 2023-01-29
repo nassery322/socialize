@@ -8,7 +8,7 @@ const Posts =  props => {
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(4);
    async function postsData(){
-    const response = await fetch('https://socialize-6f1eb-default-rtdb.firebaseio.com/postdata.json');
+    const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata.json`);
 const data = await response.json();
 let loadedPosts=[];
     for(const key in data){

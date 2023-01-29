@@ -13,7 +13,7 @@ const Comments = props =>{
         const username = props.userData.name + ' ' + props.userData.lastname;
         if(props.isLoggedIn){
             if(commentRef.current.value.trim().length > 0 ){
-                const response = await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}/comments.json`,{
+                const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}/comments.json`,{
                     method: 'POST',
                     body: JSON.stringify({comment: commentRef.current.value, username: username, file:props.userData.file})
                 })

@@ -9,7 +9,7 @@ const HomeContent = props =>{
     const [login, setLogin] = useState(false)
     const [userCredintials, setUserCredintials] = useState({})
     async function fetchData(e){
-        const response = await fetch(`https://socialize-6f1eb-default-rtdb.firebaseio.com/userdata/${e}.json`)
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/userdata/${e}.json`)
         const data = await response.json();
       
     const loadedData = [];

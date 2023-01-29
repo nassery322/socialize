@@ -6,7 +6,7 @@ const UserAvatar = props =>{
 
     const [userInfo, setUserInfo] = useState(null);
     async function fetchData(e){
-        const response = await fetch(`https://socialize-6f1eb-default-rtdb.firebaseio.com/userdata/${e}.json`)
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/userdata/${e}.json`)
         const data = await response.json();
       
     const loadedData = [];
@@ -30,7 +30,7 @@ const UserAvatar = props =>{
       
     }, [userInfo] )
 
-    const content = userInfo || props.file && <img src={props.file? props.file : userInfo.file} />
+    const content =  props.file ?  <img src={props.file} /> :( userInfo && <img src={userInfo.file} />)
     return <React.Fragment>
         <div onClick={props.onClick} className={'user-avatar ' + props.className}>
             {content}

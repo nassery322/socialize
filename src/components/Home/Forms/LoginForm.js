@@ -5,8 +5,7 @@ import { ButtonC, ButtonD } from '../../../UI/Button'
 import { auth } from '../../Firebase/firebase'
 import {
     signInWithEmailAndPassword,
-    onAuthStateChanged,
-    signOut,
+ 
   } from 'firebase/auth'
   
   const LoginForm = props =>{

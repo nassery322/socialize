@@ -15,12 +15,12 @@ const [error, setError] = useState('')
     
     if(props.userIsLoggedIn){
         setPostIsLiked(true)
-        const response = await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}.json`);
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}.json`);
         const post = await response.json();
       
         post.likes = post.likes + 1;
       
-        await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}.json`, {
+        await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}.json`, {
           method: 'PATCH',
           body: JSON.stringify(post)
         });
@@ -31,12 +31,12 @@ const [error, setError] = useState('')
     }
    async function unlikeHandler(){
         setPostIsLiked(false);
-        const response = await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}.json`);
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}.json`);
         const post = await response.json();
       
         post.likes = post.likes - 1;
       
-        await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}.json`, {
+        await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}.json`, {
           method: 'PATCH',
           body: JSON.stringify(post)
         });
@@ -50,7 +50,7 @@ const [error, setError] = useState('')
 
     async function commentData(){
        
-        const response = await fetch(`${'https://socialize-6f1eb-default-rtdb.firebaseio.com'}/postdata/${props.id}/comments.json`)
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata/${props.id}/comments.json`)
     const data = await response.json();
         
     let loadedComments = [];

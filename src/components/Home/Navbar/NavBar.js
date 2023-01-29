@@ -16,7 +16,7 @@ setnavBtn(event => !event)
 
 
 async function fetchData(e){
-    const response = await fetch(`https://socialize-6f1eb-default-rtdb.firebaseio.com/userdata/${e}.json`)
+    const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/userdata/${e}.json`)
     const data = await response.json();
   
 const loadedData = [];
@@ -42,7 +42,6 @@ await signOut(auth);
 window.location.reload();
 }
 
-const styles = {'listStyleType': 'none', 'color': 'black', 'marginBottom': '30%', 'textDecoration': 'none',  }
     return <React.Fragment>
         <div className='navbar'>
         <nav>

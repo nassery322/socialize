@@ -14,7 +14,7 @@ async function submitHandler(event){
     setError(<p style={{'color': 'red'}}>Please input text into your post!</p>)
     }else{
         setPosting('Posting...')
-        const response = await fetch('https://socialize-6f1eb-default-rtdb.firebaseio.com/postdata.json', {
+        const response = await fetch(`${process.env.REACT_APP_DATABASE_URL}/postdata.json`, {
             method: "POST",
             body: JSON.stringify({post:postRef.current.value, date: new Date(), username: `${props.userData.name + ' ' + props.userData.lastname} `,likes: 0, comments:[''], file:props.userData.file}),
             headers:{'Content-Type':'aplication/json'}
