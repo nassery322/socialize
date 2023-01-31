@@ -44,7 +44,6 @@ useEffect( ()=>{
     file: ""
   });
 
-  // State to store the error messages
   const [errors, setErrors] = useState({
     name: "",
     lastname: "",
